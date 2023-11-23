@@ -40,9 +40,9 @@ app.get('/login/home', (req, res) => {
     res.send('ok');
 })
 
-app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "build/index.html"));
-  });
+// app.get("*", function (req, res) {
+//     res.sendFile(path.join(__dirname, "build/index.html"));
+//   });
 
 app.listen('3002', () => {
     console.log('3002번 포트에서 대기 중');
